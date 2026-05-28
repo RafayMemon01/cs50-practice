@@ -13,9 +13,11 @@
 // make calls gcc behind the scenes
 // that is why without gcc, make throws: cc: No such file or directory
 
+#include <cs50.h>
 #include <stdio.h>
 
 int main(void)
 {
-    printf("hello, world\n");
+    string answer = get_string("What is your ? ");
+    printf("Hello, %s\n", answer);
 }
